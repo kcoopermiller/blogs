@@ -1,10 +1,13 @@
 develop
+
 ```
 quarto preview
 ```
 
-publish 
+publish
+
 ```
 quarto render
-git push
+git [add, commit, push]
+quarto publish gh-pages
 ```
