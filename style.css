@@ -1,0 +1,8 @@
+.navbar {
+    max-width: 975px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(24, 22, 34);
+    background-color: #fff;
+    font-weight: 700;
+}
