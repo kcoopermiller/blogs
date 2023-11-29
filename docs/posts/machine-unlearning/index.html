@@ -118,7 +118,7 @@ background: #f7f7f7;
 <link rel="stylesheet" href="../../style.css">
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-search-results"></div>
 <!-- content -->
@@ -156,7 +156,30 @@ background: #f7f7f7;
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model">Model</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  </ul></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#mia" id="toc-mia" class="nav-link" data-scroll-target="#mia">MIA</a></li>
+  <li><a href="#competition-metric" id="toc-competition-metric" class="nav-link" data-scroll-target="#competition-metric">Competition Metric</a></li>
+  <li><a href="#autoencoder-failure" id="toc-autoencoder-failure" class="nav-link" data-scroll-target="#autoencoder-failure">Autoencoder Failure</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -164,8 +187,11 @@ background: #f7f7f7;
 
 
 <p><a style="font-size: 13px; color: #4e5154" classname="home" href="https://kcoopermiller.github.io">RETURN HOME</a></p>
-<p>Machine unlearning refers to the process by which a machine learning model is able to effectively ‘unlearn’ or remove specific data from its training set.</p>
-<p>In this experiment, we utilized sparse autoencoders to This approach is derived from Anthropic’s “Towards Monosemanticity: Decomposing Language Models With Dictionary Learning”, applying their methods to generate interpretable features of a neural network to the field of machine unlearning.</p>
+
+<!-- Machine unlearning refers to the process by which a machine learning model is able to effectively 'unlearn' or remove specific data from its training set. 
+
+In this experiment, we utilized sparse autoencoders to 
+This approach is derived from Anthropic's "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", applying their methods to generate interpretable features of a neural network to the field of machine unlearning. -->
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -269,14 +295,15 @@ H–I
 <h1>Setup</h1>
 <section id="model" class="level2">
 <h2 class="anchored" data-anchor-id="model">Model</h2>
-<p>Transformer for language Resnet for Image classification?</p>
+<!-- Transformer for language
+Resnet for Image classification? -->
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 </section>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
 </section>
+<section id="methodology" class="level1">
+<h1>Methodology</h1>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
@@ -320,9 +347,11 @@ H–I
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<section id="exigence" class="level2">
-<h2 class="anchored" data-anchor-id="exigence">Exigence</h2>
-<p>While it may seem extraneous to turn Machine unlearning is While techniques such as MIA, ____, or the one proposed in this competition are ways to convice researchers of the efficacy of the unlearning algorithm, it may not be enough to convince those who don’t understand the esoteric nature of neural netwoks. Obvious evidence will be a necessity when trying to convince the layman that their data is no longer a part of the network.</p>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<!-- While it may seem extraneous to turn 
+Machine unlearning is 
+While techniques such as MIA, ____, or the one proposed in this competition are ways to convice researchers of the efficacy of the unlearning algorithm, it may not be enough to convince those who don't understand the esoteric nature of neural netwoks. Obvious evidence will be a necessity when trying to convince the layman that their data is no longer a part of the network. -->
 
 
 </section>

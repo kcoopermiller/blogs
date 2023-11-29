@@ -14,14 +14,19 @@ format:
     code-fold: true
     css: ../../style.css
 jupyter: python3
+toc: true
+# notebook-view: 
+# - notebook: unlearning.ipynb
+#   title: "Unlearning"
+#   url: https://www.kaggle.com/code/kcoopermiller/unlearning
 ---
 <a 
 style="font-size: 13px; color: #4e5154" className="home" href="https://kcoopermiller.github.io">RETURN HOME</a>
 
-Machine unlearning refers to the process by which a machine learning model is able to effectively 'unlearn' or remove specific data from its training set. 
+<!-- Machine unlearning refers to the process by which a machine learning model is able to effectively 'unlearn' or remove specific data from its training set. 
 
 In this experiment, we utilized sparse autoencoders to 
-This approach is derived from Anthropic's "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", applying their methods to generate interpretable features of a neural network to the field of machine unlearning.
+This approach is derived from Anthropic's "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", applying their methods to generate interpretable features of a neural network to the field of machine unlearning. -->
 
 
 
@@ -42,12 +47,12 @@ graph percolation {
 # Setup
 
 ## Model
-Transformer for language
-Resnet for Image classification?
+<!-- Transformer for language
+Resnet for Image classification? -->
 
 ## Data
 
-## Methodology
+# Methodology
 
 # Results
 
@@ -80,7 +85,7 @@ plt.show(fig)
 
 
 # Conclusion
-## Exigence
-While it may seem extraneous to turn 
+## Motivation
+<!-- While it may seem extraneous to turn 
 Machine unlearning is 
-While techniques such as MIA, ____, or the one proposed in this competition are ways to convice researchers of the efficacy of the unlearning algorithm, it may not be enough to convince those who don't understand the esoteric nature of neural netwoks. Obvious evidence will be a necessity when trying to convince the layman that their data is no longer a part of the network.
+While techniques such as MIA, ____, or the one proposed in this competition are ways to convice researchers of the efficacy of the unlearning algorithm, it may not be enough to convince those who don't understand the esoteric nature of neural netwoks. Obvious evidence will be a necessity when trying to convince the layman that their data is no longer a part of the network. -->
