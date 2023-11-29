@@ -1,0 +1,64 @@
+---
+title: "NeurIPS 2023 - Machine Unlearning Submission"
+author: "Cooper Miller"
+date: "2023-11-28"
+categories: [ai/ml]
+image: "unlearning.png"
+title-block-banner: "#f7f7f7"
+title-block-banner-color: "black"
+title-block-style: default
+navbar: false
+theme: ../../custom.scss
+format: 
+  html:
+    code-fold: true
+    css: ../../style.css
+jupyter: python3
+---
+ 
+This is my submission to the NeurIPS 2023 - Machine Unlearning Competition
+
+
+```{dot}
+graph percolation {
+    node [shape=circle];
+    // Define nodes
+    A; B; C; D; E; F; G; H; I;
+    // Define edges
+    A -- B; A -- D; B -- C; B -- E; C -- F;
+    D -- E; D -- G; E -- F; E -- H; F -- I;
+    G -- H; H -- I;
+    // You can add more nodes and edges to expand the graph
+}
+```
+
+# 
+
+# Methodology
+
+# Results
+
+### Matplotlib
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+x = np.arange(10)
+y = 2.5 * np.sin(x / 20 * np.pi)
+yerr = np.linspace(0.05, 0.2, 10)
+
+plt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')
+plt.errorbar(x, y + 2, yerr=yerr, uplims=True, label='uplims=True')
+plt.errorbar(x, y + 1, yerr=yerr, uplims=True, lolims=True,
+             label='uplims=True, lolims=True')
+
+upperlimits = [True, False] * 5
+lowerlimits = [False, True] * 5
+plt.errorbar(x, y, yerr=yerr, uplims=upperlimits, lolims=lowerlimits,
+             label='subsets of uplims and lolims')
+
+plt.legend(loc='lower right')
+plt.show(fig)
+```

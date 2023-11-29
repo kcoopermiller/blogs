@@ -1,0 +1,11 @@
+{
+  "hash": "3ef7cd17b8e1bd9647b91a124b1680d0",
+  "result": {
+    "markdown": "---\ntitle: NeurIPS 2023 - Machine Unlearning Submission\nauthor: Cooper Miller\ndate: '2023-11-28'\ncategories:\n  - ai/ml\nimage: unlearning.png\ntitle-block-banner: '#f7f7f7'\ntitle-block-banner-color: black\ntitle-block-style: default\nnavbar: false\ntheme: ../../custom.scss\nformat:\n  html:\n    code-fold: true\n    css: ../../style.css\n---\n\nThis is my submission to the NeurIPS 2023 - Machine Unlearning Competition\n\n\n\n```{dot}\ngraph percolation {\n    node [shape=circle];\n    // Define nodes\n    A; B; C; D; E; F; G; H; I;\n    // Define edges\n    A -- B; A -- D; B -- C; B -- E; C -- F;\n    D -- E; D -- G; E -- F; E -- H; F -- I;\n    G -- H; H -- I;\n    // You can add more nodes and edges to expand the graph\n}\n```\n\n\n# \n\n# Methodology\n\n# Results\n\n### Matplotlib\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig = plt.figure()\nx = np.arange(10)\ny = 2.5 * np.sin(x / 20 * np.pi)\nyerr = np.linspace(0.05, 0.2, 10)\n\nplt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')\nplt.errorbar(x, y + 2, yerr=yerr, uplims=True, label='uplims=True')\nplt.errorbar(x, y + 1, yerr=yerr, uplims=True, lolims=True,\n             label='uplims=True, lolims=True')\n\nupperlimits = [True, False] * 5\nlowerlimits = [False, True] * 5\nplt.errorbar(x, y, yerr=yerr, uplims=upperlimits, lolims=lowerlimits,\n             label='subsets of uplims and lolims')\n\nplt.legend(loc='lower right')\nplt.show(fig)\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){width=558 height=411}\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

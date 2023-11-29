@@ -1,0 +1,9 @@
+---
+# backgroundcolor: "#f7f7f7"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+page-layout: article
+---
