@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -170,7 +136,6 @@ background: #f7f7f7;
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
   <li><a href="#mia" id="toc-mia" class="nav-link" data-scroll-target="#mia">MIA</a></li>
-  <li><a href="#competition-metric" id="toc-competition-metric" class="nav-link" data-scroll-target="#competition-metric">Competition Metric</a></li>
   <li><a href="#autoencoder-failure" id="toc-autoencoder-failure" class="nav-link" data-scroll-target="#autoencoder-failure">Autoencoder Failure</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
@@ -187,116 +152,29 @@ background: #f7f7f7;
 
 
 <p><a style="font-size: 13px; color: #4e5154" classname="home" href="https://kcoopermiller.github.io">RETURN HOME</a></p>
+<p>WIP! Will update when competition is over.</p>
 
 <!-- Machine unlearning refers to the process by which a machine learning model is able to effectively 'unlearn' or remove specific data from its training set. 
 
 In this experiment, we utilized sparse autoencoders to 
 This approach is derived from Anthropic's "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", applying their methods to generate interpretable features of a neural network to the field of machine unlearning. -->
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<div>
-<svg width="672" height="480" viewbox="0.00 0.00 152.01 332.08" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328.08)">
-<title>
-percolation
-</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-328.08 148.01,-328.08 148.01,4 -4,4"></polygon> <!-- A --> <g id="node1" class="node">
-<title>
-A
-</title>
-<ellipse fill="none" stroke="black" cx="72" cy="-306.07" rx="18.02" ry="18.02"></ellipse> <text text-anchor="middle" x="72" y="-301.87" font-family="Times,serif" font-size="14.00">A</text> </g> <!-- B --> <g id="node2" class="node">
-<title>
-B
-</title>
-<ellipse fill="none" stroke="black" cx="45" cy="-234.05" rx="18" ry="18"></ellipse> <text text-anchor="middle" x="45" y="-229.85" font-family="Times,serif" font-size="14.00">B</text> </g> <!-- A&#45;&#45;B --> <g id="edge1" class="edge">
-<title>
-A–B
-</title>
-<path fill="none" stroke="black" d="M65.74,-288.83C61.38,-277.52 55.58,-262.5 51.23,-251.2"></path> </g> <!-- D --> <g id="node4" class="node">
-<title>
-D
-</title>
-<ellipse fill="none" stroke="black" cx="99" cy="-234.05" rx="18.02" ry="18.02"></ellipse> <text text-anchor="middle" x="99" y="-229.85" font-family="Times,serif" font-size="14.00">D</text> </g> <!-- A&#45;&#45;D --> <g id="edge2" class="edge">
-<title>
-A–D
-</title>
-<path fill="none" stroke="black" d="M78.26,-288.83C82.62,-277.52 88.42,-262.5 92.77,-251.2"></path> </g> <!-- C --> <g id="node3" class="node">
-<title>
-C
-</title>
-<ellipse fill="none" stroke="black" cx="18" cy="-162.03" rx="18" ry="18"></ellipse> <text text-anchor="middle" x="18" y="-157.83" font-family="Times,serif" font-size="14.00">C</text> </g> <!-- B&#45;&#45;C --> <g id="edge3" class="edge">
-<title>
-B–C
-</title>
-<path fill="none" stroke="black" d="M38.74,-216.81C34.38,-205.5 28.58,-190.48 24.23,-179.18"></path> </g> <!-- E --> <g id="node5" class="node">
-<title>
-E
-</title>
-<ellipse fill="none" stroke="black" cx="72" cy="-162.03" rx="18" ry="18"></ellipse> <text text-anchor="middle" x="72" y="-157.83" font-family="Times,serif" font-size="14.00">E</text> </g> <!-- B&#45;&#45;E --> <g id="edge4" class="edge">
-<title>
-B–E
-</title>
-<path fill="none" stroke="black" d="M51.26,-216.81C55.62,-205.5 61.42,-190.48 65.77,-179.18"></path> </g> <!-- F --> <g id="node6" class="node">
-<title>
-F
-</title>
-<ellipse fill="none" stroke="black" cx="45" cy="-90.01" rx="18" ry="18"></ellipse> <text text-anchor="middle" x="45" y="-85.81" font-family="Times,serif" font-size="14.00">F</text> </g> <!-- C&#45;&#45;F --> <g id="edge5" class="edge">
-<title>
-C–F
-</title>
-<path fill="none" stroke="black" d="M24.26,-144.79C28.62,-133.48 34.42,-118.46 38.77,-107.16"></path> </g> <!-- D&#45;&#45;E --> <g id="edge6" class="edge">
-<title>
-D–E
-</title>
-<path fill="none" stroke="black" d="M92.74,-216.81C88.38,-205.5 82.58,-190.48 78.23,-179.18"></path> </g> <!-- G --> <g id="node7" class="node">
-<title>
-G
-</title>
-<ellipse fill="none" stroke="black" cx="126" cy="-162.03" rx="18.02" ry="18.02"></ellipse> <text text-anchor="middle" x="126" y="-157.83" font-family="Times,serif" font-size="14.00">G</text> </g> <!-- D&#45;&#45;G --> <g id="edge7" class="edge">
-<title>
-D–G
-</title>
-<path fill="none" stroke="black" d="M105.26,-216.81C109.62,-205.5 115.42,-190.48 119.77,-179.18"></path> </g> <!-- E&#45;&#45;F --> <g id="edge8" class="edge">
-<title>
-E–F
-</title>
-<path fill="none" stroke="black" d="M65.74,-144.79C61.38,-133.48 55.58,-118.46 51.23,-107.16"></path> </g> <!-- H --> <g id="node8" class="node">
-<title>
-H
-</title>
-<ellipse fill="none" stroke="black" cx="99" cy="-90.01" rx="18.02" ry="18.02"></ellipse> <text text-anchor="middle" x="99" y="-85.81" font-family="Times,serif" font-size="14.00">H</text> </g> <!-- E&#45;&#45;H --> <g id="edge9" class="edge">
-<title>
-E–H
-</title>
-<path fill="none" stroke="black" d="M78.26,-144.79C82.62,-133.48 88.42,-118.46 92.77,-107.16"></path> </g> <!-- I --> <g id="node9" class="node">
-<title>
-I
-</title>
-<ellipse fill="none" stroke="black" cx="72" cy="-18" rx="18" ry="18"></ellipse> <text text-anchor="middle" x="72" y="-13.8" font-family="Times,serif" font-size="14.00">I</text> </g> <!-- F&#45;&#45;I --> <g id="edge10" class="edge">
-<title>
-F–I
-</title>
-<path fill="none" stroke="black" d="M51.26,-72.77C55.62,-61.46 61.42,-46.44 65.77,-35.15"></path> </g> <!-- G&#45;&#45;H --> <g id="edge11" class="edge">
-<title>
-G–H
-</title>
-<path fill="none" stroke="black" d="M119.74,-144.79C115.38,-133.48 109.58,-118.46 105.23,-107.16"></path> </g> <!-- H&#45;&#45;I --> <g id="edge12" class="edge">
-<title>
-H–I
-</title>
-<path fill="none" stroke="black" d="M92.74,-72.77C88.38,-61.46 82.58,-46.44 78.23,-35.15"></path> </g> </g>
-</svg>
-</div>
-</div>
-</div>
-</div>
+<!-- ```{dot}
+graph percolation {
+    node [shape=circle];
+    // Define nodes
+    A; B; C; D; E; F; G; H; I;
+    // Define edges
+    A -- B; A -- D; B -- C; B -- E; C -- F;
+    D -- E; D -- G; E -- F; E -- H; F -- I;
+    G -- H; H -- I;
+    // You can add more nodes and edges to expand the graph
+}
+``` -->
 <section id="setup" class="level1">
 <h1>Setup</h1>
 <section id="model" class="level2">
 <h2 class="anchored" data-anchor-id="model">Model</h2>
-<!-- Transformer for language
-Resnet for Image classification? -->
+<!-- Transformers -->
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
@@ -310,39 +188,30 @@ Resnet for Image classification? -->
 <section id="mia" class="level2">
 <h2 class="anchored" data-anchor-id="mia">MIA</h2>
 </section>
-<section id="competition-metric" class="level2">
-<h2 class="anchored" data-anchor-id="competition-metric">Competition Metric</h2>
-</section>
 <section id="autoencoder-failure" class="level2">
 <h2 class="anchored" data-anchor-id="autoencoder-failure">Autoencoder Failure</h2>
-<div class="cell" data-execution_count="1">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">2.5</span> <span class="op">*</span> np.sin(x <span class="op">/</span> <span class="dv">20</span> <span class="op">*</span> np.pi)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>yerr <span class="op">=</span> np.linspace(<span class="fl">0.05</span>, <span class="fl">0.2</span>, <span class="dv">10</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y <span class="op">+</span> <span class="dv">3</span>, yerr<span class="op">=</span>yerr, label<span class="op">=</span><span class="st">'both limits (default)'</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y <span class="op">+</span> <span class="dv">2</span>, yerr<span class="op">=</span>yerr, uplims<span class="op">=</span><span class="va">True</span>, label<span class="op">=</span><span class="st">'uplims=True'</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y <span class="op">+</span> <span class="dv">1</span>, yerr<span class="op">=</span>yerr, uplims<span class="op">=</span><span class="va">True</span>, lolims<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>             label<span class="op">=</span><span class="st">'uplims=True, lolims=True'</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>upperlimits <span class="op">=</span> [<span class="va">True</span>, <span class="va">False</span>] <span class="op">*</span> <span class="dv">5</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>lowerlimits <span class="op">=</span> [<span class="va">False</span>, <span class="va">True</span>] <span class="op">*</span> <span class="dv">5</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y, yerr<span class="op">=</span>yerr, uplims<span class="op">=</span>upperlimits, lolims<span class="op">=</span>lowerlimits,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>             label<span class="op">=</span><span class="st">'subsets of uplims and lolims'</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">'lower right'</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>plt.show(fig)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<p><img src="index_files/figure-html/cell-2-output-1.png" width="558" height="411"></p>
-</div>
-</div>
+<!-- ```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+x = np.arange(10)
+y = 2.5 * np.sin(x / 20 * np.pi)
+yerr = np.linspace(0.05, 0.2, 10)
+
+plt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')
+plt.errorbar(x, y + 2, yerr=yerr, uplims=True, label='uplims=True')
+plt.errorbar(x, y + 1, yerr=yerr, uplims=True, lolims=True,
+             label='uplims=True, lolims=True')
+
+upperlimits = [True, False] * 5
+lowerlimits = [False, True] * 5
+plt.errorbar(x, y, yerr=yerr, uplims=upperlimits, lolims=lowerlimits,
+             label='subsets of uplims and lolims')
+
+plt.legend(loc='lower right')
+plt.show(fig)
+``` -->
 </section>
 </section>
 <section id="conclusion" class="level1">

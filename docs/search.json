@@ -11,7 +11,7 @@
     "href": "posts/machine-unlearning/index.html",
     "title": "NeurIPS 2023 - Machine Unlearning Submission",
     "section": "",
-    "text": "RETURN HOME\npercolation\n\n  \n\nA\n\n A   \n\nB\n\n B   \n\nA–B\n\n   \n\nD\n\n D   \n\nA–D\n\n   \n\nC\n\n C   \n\nB–C\n\n   \n\nE\n\n E   \n\nB–E\n\n   \n\nF\n\n F   \n\nC–F\n\n   \n\nD–E\n\n   \n\nG\n\n G   \n\nD–G\n\n   \n\nE–F\n\n   \n\nH\n\n H   \n\nE–H\n\n   \n\nI\n\n I   \n\nF–I\n\n   \n\nG–H\n\n   \n\nH–I"
+    "text": "RETURN HOME\nWIP! Will update when competition is over."
   },
   {
     "objectID": "posts/machine-unlearning/index.html#model",
@@ -35,18 +35,11 @@
     "text": "MIA"
   },
   {
-    "objectID": "posts/machine-unlearning/index.html#competition-metric",
-    "href": "posts/machine-unlearning/index.html#competition-metric",
-    "title": "NeurIPS 2023 - Machine Unlearning Submission",
-    "section": "Competition Metric",
-    "text": "Competition Metric"
-  },
-  {
     "objectID": "posts/machine-unlearning/index.html#autoencoder-failure",
     "href": "posts/machine-unlearning/index.html#autoencoder-failure",
     "title": "NeurIPS 2023 - Machine Unlearning Submission",
     "section": "Autoencoder Failure",
-    "text": "Autoencoder Failure\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig = plt.figure()\nx = np.arange(10)\ny = 2.5 * np.sin(x / 20 * np.pi)\nyerr = np.linspace(0.05, 0.2, 10)\n\nplt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')\nplt.errorbar(x, y + 2, yerr=yerr, uplims=True, label='uplims=True')\nplt.errorbar(x, y + 1, yerr=yerr, uplims=True, lolims=True,\n             label='uplims=True, lolims=True')\n\nupperlimits = [True, False] * 5\nlowerlimits = [False, True] * 5\nplt.errorbar(x, y, yerr=yerr, uplims=upperlimits, lolims=lowerlimits,\n             label='subsets of uplims and lolims')\n\nplt.legend(loc='lower right')\nplt.show(fig)"
+    "text": "Autoencoder Failure"
   },
   {
     "objectID": "posts/machine-unlearning/index.html#motivation",
